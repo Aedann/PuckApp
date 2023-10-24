@@ -1,0 +1,52 @@
+.Device{
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: -12px -8px 40px 0px rgba(41, 41, 41, 0.35) inset;
+    gap : 20px;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+a{
+    color: rgb(145, 91, 252);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration : none ;
+    color: rgb(77, 45, 139)FF;
+}
+
+.Device:hover{
+    background-color: rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+#dist{
+    margin-right: auto;
+}
+
+#Wallet{
+    background : no-repeat center url("../Ressources/Wallet.png");
+    background-size: 100%;
+    height : 64px;
+    width: 64px;
+}
+
+
+
+#Cigarettes{
+    background: no-repeat center url("../Ressources/Cigarettes.png");
+    background-size: 100%;
+    height : 64px;
+    width: 64px;
+}
+
+
+#Computer{
+    background : no-repeat center url("../Ressources/Computer.png");
+    background-size: 100%;
+    height : 64px;
+    width: 64px;
+}
