@@ -26,8 +26,7 @@ export default defineConfig({
 		workbox: {
 			globPatterns: ['**/*.{js,css,html,ico,png,svg}']
 		},
-	  
-
- })
+	}),
+  base : "/PuckApp/PuckPWA/",
 ],
 })
