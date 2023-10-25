@@ -91,7 +91,7 @@ textarea, input, button{
 
 .Map{
     position: relative;
-    bottom: 28px;
+    bottom: 60px;
     z-index: -5;
     height : 550px;
     width : 100%;

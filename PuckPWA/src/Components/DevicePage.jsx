@@ -23,7 +23,7 @@ function DevicePage() {
 
   useEffect(()=>{
     if(isLoading==true){
-      setTimeout(()=>{setIsLoading(false); setIsTracking(true)},2000);
+      setTimeout(()=>{setIsLoading(false); setIsTracking(true)},1500);
     }
   },[isLoading])
 
