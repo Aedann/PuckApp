@@ -8,22 +8,22 @@ export default defineConfig({
   plugins: [react(),
   VitePWA({ 
 	  includeAssets: ['vite.svg'],
-      manifest: {
-        name: 'Puck App',
-        short_name: 'Puck',
-        description: 'Puck Tracker Official Application',
-        theme_color: '#ffffff',
-        icons: [
-          {
-            src: 'vite.svg',
-            type: 'image/svg+xml'
-          },
-        ]
-      },
+    manifest: {
+      name: 'Puck App',
+      short_name: 'Puck',
+      description: 'Puck Tracker Official Application',
+      theme_color: '#ffffff',
+      icons: [
+        {
+          src: 'vite.svg',
+          type: 'image/svg+xml'
+        },
+      ]
+    },
 	  registerType: 'autoUpdate',
 	  injectRegister: 'auto',
 	  workbox: {
-			globPatterns: ['**/*.{js,css,html,ico,png,svg}']
+      globPatterns: ['**/*.{js,css,html,ico,png,svg}']
 	  },
 	  
 

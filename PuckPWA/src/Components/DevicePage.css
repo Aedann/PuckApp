@@ -135,3 +135,59 @@ textarea, input, button{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
+#Loading{
+    height : 100%;
+    background :rgba(39, 40, 44, 0.301);
+}
+
+#loaderFrame{
+    position: relative;
+    margin: auto auto auto auto;
+    top : 10%;
+    width: 100px;
+    height : 100px;
+}
+
+#Tracking{
+    background: no-repeat url("../Ressources/Map3Triangulating.png") center;
+}
+
+
+.loader {
+    width: 100px;
+    aspect-ratio: 1;
+    display: grid;
+    border: 8px solid #0000;
+    border-radius: 50%;
+    border-color: #ccc #0000;
+    animation: l16 1s infinite linear;
+    z-index: 9;
+  }
+  .loader::before,
+  .loader::after {    
+    content: "";
+    grid-area: 1/1;
+    margin: 4px;
+    border: inherit;
+    border-radius: 50%;
+  }
+  .loader::before {
+    border-color: #f03355 #0000;
+    animation: inherit; 
+    animation-duration: .5s;
+    animation-direction: reverse;
+  }
+  .loader::after {
+    margin: 16px;
+  }
+  @keyframes l16 { 
+    100%{transform: rotate(1turn)}
+  }
+
+#LoadingLabel{
+    position: relative;
+    top : 10%;
+    left : 23%;
+    font-size: 24px;
+
+}

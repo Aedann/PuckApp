@@ -1,4 +1,4 @@
-import React, {useState } from 'react';
+import React, {useState,useEffect} from 'react';
 import Device from './Device';
 import NavBar from './NavBar'; 
 import settingsIcon from '../Ressources/settings.svg';
@@ -17,7 +17,16 @@ import {
   
 function DevicePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isTracking, setIsTracking] = useState(false);
   const { Icon, Name, Distance } = useParams();
+
+  useEffect(()=>{
+    if(isLoading==true){
+      setTimeout(()=>{setIsLoading(false); setIsTracking(true)},2000);
+    }
+  },[isLoading])
+
 
   let mapClass = "azerza";
   console.log("Before switch: ",mapClass)
@@ -33,7 +42,7 @@ function DevicePage() {
         mapClass = "Map3";
         break;
   }
-  console.log("Map : ",mapClass)
+  console.log("Map : ",mapClass) 
 
   return (
   <div className='App'>
@@ -54,12 +63,19 @@ function DevicePage() {
               <textarea id="Description" placeholder="Description..."></textarea>
               <p id="dist2"><strong>Distance : {Distance}m</strong></p>
               <Link to={`/DevicePage/${Icon}/${Name}/${Distance}`}>
-                <button id="TrackPuck" >Track this puck !</button>
+                <button id="TrackPuck" onClick={()=>setIsLoading(true)}>Track this puck !</button>
               </Link>
             </div>
         </div>
 
-        <div className={`${mapClass} Map`}></div>
+        <div className={`${mapClass} Map`} id={isTracking&&"Tracking"}>
+          <div id={isLoading&&"Loading"}>
+          <p id="LoadingLabel">{isLoading&&"Retrieving positions..."}</p>
+            <div id="loaderFrame">
+              {isLoading&&<div className="loader"></div>}
+            </div>
+          </div>
+        </div>
       </div>
   </div>
   );
