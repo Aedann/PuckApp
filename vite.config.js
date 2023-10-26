@@ -27,6 +27,9 @@ export default defineConfig({
 			globPatterns: ['**/*.{js,css,html,ico,png,svg}']
 		},
 	}),
-  base : "/PuckApp/PuckPWA/",
-],
+	],
+  base : "",
+  server: {
+    host: true
+  }
 })
