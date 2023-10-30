@@ -13,7 +13,7 @@ export default defineConfig({
 		injectRegister: 'auto',
 		manifest: {
 		  name: 'Puck App',
-		  short_name: 'Puck',
+		  short_name: 'Puck4',
 		  description: 'Puck Tracker Official Application',
 		  theme_color: '#ffffff',
 		  icons: [
