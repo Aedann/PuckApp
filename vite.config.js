@@ -28,7 +28,7 @@ export default defineConfig({
 		},
 	}),
 	],
-  base : "",
+  base : "/PuckApp/",
   server: {
     host: true
   }
