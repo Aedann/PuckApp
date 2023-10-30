@@ -1,1 +1,1 @@
-{"name":"Puck App","short_name":"Puck2","start_url":"./","display":"standalone","background_color":"#ffffff","lang":"en","scope":"./","description":"Puck Tracker Official Application","theme_color":"#ffffff","icons":[{"src":"vite.svg","type":"image/svg+xml"}]}
+{"name":"Puck App","short_name":"Puck3","start_url":"/","display":"standalone","background_color":"#ffffff","lang":"en","scope":"/","description":"Puck Tracker Official Application","theme_color":"#ffffff","icons":[{"src":"vite.svg","type":"image/svg+xml"}]}
