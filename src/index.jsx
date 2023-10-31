@@ -13,7 +13,7 @@ root.render(
     <Routes>
       <Route path='/' element={<App />} />
       <Route path='/DevicePage/:Icon/:Name/:Distance' element={<DevicePage />} />
-      <Route path='Test/' element={<Test />} />
+      <Route path='/Test/' element={<Test />} />
     </Routes>
   </BrowserRouter>
 );
